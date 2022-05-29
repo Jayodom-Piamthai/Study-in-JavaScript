@@ -20,5 +20,5 @@ function displaycel(){
 }
 
 function displayfaren(){
-    alert(displayfaren(456))
+    alert(displayfaren(456)) 
 }
