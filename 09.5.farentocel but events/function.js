@@ -12,7 +12,7 @@ function display(element , value)
     document.getElementById(element).innerHTML="<b>" + value + "</b>"
 }
 function CelToFaren(cel){
-    let value = (cel*9/5)-32
+    let value = (cel*9/5)+32
     return value.toFixed(2) + " F ํ";//set to only two decimals
 }
 function displaycel(value){
