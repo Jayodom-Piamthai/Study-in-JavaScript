@@ -16,9 +16,9 @@ function CelToFaren(cel){
     return value.toFixed(2) + " C ํ";//set to only two decimals
 }
 function displaycel(value){
-    alert(FarenToCel(135))
+    alert(FarenToCel(value)))
 }
 
 function displayfaren(value){
-    alert(CelToFaren(456))
+    alert(CelToFaren(value))
 }
