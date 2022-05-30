@@ -3,10 +3,9 @@
 
     </head>
     <body>
-        <div id="CelToFaren"></div>
-        <div id="FarenToCel"></div>
-        <button onclick=displaycel()>display celcius</button>
+        <input  id="inputValue" type="text">
+        <button onclick="displaycel(document.getElementById('inputValue').value)">display celcius</button>
         <button onclick=displayfaren()>display farenheit</button>
         <script src="function.js"></script>
     </body>
-</html>
+</html> 
