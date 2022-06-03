@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
 }
+.back{
+    background-color: black;
+    padding: 50px;
+}
 .header{
     background-color: rgb(34, 0, 79);
-    font-size: 50px;
+    font-size: 40px;
     font-family: sans-serif;
     color: white;
     display: flex;
@@ -13,4 +17,7 @@
     align-self: center;
     align-items: center;
     padding-top: 30px;
+    border-radius: 30px;
+    margin: 7px;
+    
 }
