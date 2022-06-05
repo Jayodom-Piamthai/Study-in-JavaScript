@@ -11,5 +11,5 @@ function Rhongler(){
     }
     document.getElementById("Faked").innerHTML = "<p>"+"lmao,im not sorry,not one bit. get pranked suckas" + "</p>" ;
 }  
-document.getElementById("TheName").innerHTML =  "look,["+ TheName + "],im sorry for you,im really,really sorry"
-document.getElementById("CauseNDate").innerHTML = "its been days after i did that to you,i should sorry to you sooner"
+document.getElementById("TheName").innerHTML =  "look,["+ TheName + "],im sorry that i did that to you,im really,really sorry"
+document.getElementById("CauseNDate").innerHTML = "yea,im sorry that i ["+ Cause +"] ya,i know its been ["+IncDate+"] since i"
