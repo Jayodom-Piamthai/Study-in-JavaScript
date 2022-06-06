@@ -12,4 +12,4 @@ function Rhongler(){
     document.getElementById("Faked").innerHTML = "<p>"+"lmao,im not sorry,not one bit. get pranked suckas" + "</p>" ;
 }  
 document.getElementById("TheName").innerHTML =  "look,["+ TheName + "],im sorry that i did that to you,im really,really sorry"
-document.getElementById("CauseNDate").innerHTML = "yea,im sorry that i ["+ Cause +"] ya,i know its been ["+IncDate+"] since i"
+document.getElementById("CauseNDate").innerHTML = "yea,im sorry that i ["+ Cause +"] ya on ["+IncDate+"] "
