@@ -3,8 +3,10 @@ try{
     var Cause = prompt("what did i do to you?")
     var IncDate = prompt("when did i do that to you?")
 }
-catch null {
+catch (error) {
     var TheName = "Dipshit"
+    var Cause = "Dipshit"
+    var IncDate = "Dipshit"
 }
 function Rhongler(){
     i=0
