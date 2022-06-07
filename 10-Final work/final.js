@@ -10,9 +10,11 @@ catch (blank) {
 }
 function Rhongler(){
     i=0
+    o=0
     while (i < 69){
         if (i%3 == 0) 
             window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+            o = o+1
         if (i%4 == 0) 
             window.open("https://www.youtube.com/watch?v=OLpeX4RRo28")
         if (i%5 == 0) 
