@@ -5,7 +5,12 @@ let IncDate = prompt("when did i do that to you?")
 function Rhongler(){
     i=0
     while (i < 69){
-        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        if (i%3 == 0) 
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        if (i%4 == 0) 
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        if (i%5 == 0) 
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
         console.log(i)
         i = i+1
     }
