@@ -1,7 +1,11 @@
-var TheName = prompt("hi,what's your name")
-var Cause = prompt("what did i do to you?")
-var IncDate = prompt("when did i do that to you?")
-
+try{
+    var TheName = prompt("hi,what's your name")
+    var Cause = prompt("what did i do to you?")
+    var IncDate = prompt("when did i do that to you?")
+}
+catch null {
+    var TheName = "Dipshit"
+}
 function Rhongler(){
     i=0
     while (i < 69){
