@@ -1,6 +1,6 @@
-let TheName = prompt("hi,what's your name")
-let Cause = prompt("what did i do to you?")
-let IncDate = prompt("when did i do that to you?")
+var TheName = prompt("hi,what's your name")
+var Cause = prompt("what did i do to you?")
+var IncDate = prompt("when did i do that to you?")
 
 function Rhongler(){
     i=0
