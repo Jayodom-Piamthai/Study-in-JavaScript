@@ -20,6 +20,7 @@ function Rhongler(){
             o = o+1
         if (i%5 == 0) 
             window.open("https://youtu.be/0mHPrkhE_Tg")
+            o = o+1
         console.log(i)
         i = i+1
     }
