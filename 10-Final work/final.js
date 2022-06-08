@@ -1,13 +1,14 @@
-try{
-    var TheName = prompt("hi,what's your name")
-    var Cause = prompt("what did i do to you?")
-    var IncDate = prompt("when did i do that to you?")
-}
-catch (blank) {
+var TheName = prompt("hi,what's your name")
+var Cause = prompt("what did i do to you?")
+var IncDate = prompt("when did i do that to you?")
+
+if (TheName.value.length == 0){
     var TheName = "Dipshit"
-    var Cause = "f****** kicked you"
-    var IncDate = "that fateful day"
+
 }
+var Cause = "f****** kicked you"
+var IncDate = "that fateful day"
+
 function Rhongler(){
     i=0
     o=0
