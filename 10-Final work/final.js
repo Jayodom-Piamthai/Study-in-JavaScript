@@ -5,8 +5,8 @@ try{
 }
 catch (blank) {
     var TheName = "Dipshit"
-    var Cause = "Dipshit"
-    var IncDate = "Dipshit"
+    var Cause = "f****** kicked you"
+    var IncDate = "that fateful day"
 }
 function Rhongler(){
     i=0
