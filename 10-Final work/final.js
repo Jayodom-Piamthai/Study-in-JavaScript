@@ -2,12 +2,16 @@ var TheName = prompt("hi,what's your name")
 var Cause = prompt("what did i do to you?")
 var IncDate = prompt("when did i do that to you?")
 
-if (TheName.value.length == 0){
+if (TheName.length == 0){
     var TheName = "Dipshit"
-
 }
-var Cause = "f****** kicked you"
-var IncDate = "that fateful day"
+if (Cause.length == 0){
+    var Cause = "f**kin do it to ya"
+}
+if (IncDate.length == 0){
+    var IncDate = "that fateful day"
+}
+
 
 function Rhongler(){
     i=0
@@ -29,4 +33,4 @@ function Rhongler(){
     console.log(o)
 }  
 document.getElementById("TheName").innerHTML =  "look,["+ TheName + "],im sorry that i did that to you,im really,really sorry"
-document.getElementById("CauseNDate").innerHTML = "yea,im sorry that i ["+ Cause +"] ya on ["+IncDate+"] "
+document.getElementById("CauseNDate").innerHTML = "yea,im sorry that i ["+ Cause +"] on ["+IncDate+"] "
