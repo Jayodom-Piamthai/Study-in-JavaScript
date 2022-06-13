@@ -2,6 +2,7 @@
 console.log("Hello World")
 console.log("Hello World")
 console.log("Hello World")
+
 //console variables
 var fullname = "Ace Jay Piamthai"
 var nickname = "Ace"
