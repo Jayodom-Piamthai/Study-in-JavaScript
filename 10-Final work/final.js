@@ -10,7 +10,7 @@ if (Cause.length == 0){
 }
 if (IncDate.length == 0){
     var IncDate = "that fateful day"
-} 
+}
 
 
 function Rhongler(){//THIS IS WHERE THE FUN BEGIN
