@@ -13,7 +13,7 @@ if (IncDate.length == 0){
 } 
 
 
-function Rhongler(){
+function Rhongler(){//THIS IS WHERE THE FUN BEGIN
     i=0
     o=0
     while (i < 69){
