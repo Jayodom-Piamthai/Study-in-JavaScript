@@ -1,4 +1,5 @@
 //adding element
+
 const ul = document.querySelector('ul');
 const li = document.createElement('li');//constant to create 'li'
 ul.append(li) //inside ul-activate newListMember

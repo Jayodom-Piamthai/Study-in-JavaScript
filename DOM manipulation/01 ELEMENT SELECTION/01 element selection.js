@@ -1,3 +1,5 @@
+
+//selecting elements from the HTML page
 // GetElementById() /Id
 
 const title = document.getElementById()
@@ -16,7 +18,7 @@ const tagged = document.getElementsByTagName()
 console.log(title)
 
 
-// querySelector()  **NOTE:select the first that match the selected tag
+// querySelector()  **NOTE:select the first that match the selected tag EX) first div
 
 const qs = document.querySelector()
 console.log(container)

@@ -17,7 +17,7 @@ var age=(69 +420)
 {
     let y = 69
     alert(y)
-//"var" are used globally in the code,while "let" are used only in the operation its in
+//"var" are used globally in the code,while "let" are used only in the operation its in 
 }
 let strname = prompt("Just in case,state yo name,sucka")
 alert("Right,good evening," + strname) 
