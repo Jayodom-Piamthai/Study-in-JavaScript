@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.back{
+    padding: 50px;
+    margin: 5px;
+    background-color: black;
+}
+.header{
+    background-color: rgb(34, 0, 79);
+    font-size: 42px;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    padding-top: 30px;
+    border-radius: 30px;
+    margin: 7px;
+    
+}
