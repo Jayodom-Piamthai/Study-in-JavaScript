@@ -3,6 +3,7 @@ console.log("commencing test run")
 -start by use npm i express to install express
 -run: npm i nodemon   for automatic rerun/redeploy after saving
 -set nodemon as an independence of the project with:
+-in package.json,script: make a function(pref name start) to run nodemon EX:"nodemon server.js"
 -run with:npm run devStart   , **devStart is set in json
 -
 */
@@ -15,12 +16,14 @@ app.set('views', './views')//set the name of folder to look in
 app.set ('view engine','ejs')//set the view engine
 
 
-//---     static site     ---//
-app.use(express.static("staticSite"))//calling to use a static site to easily access subsite
-
-
 //---     Middleware    ---//
 app.use(logger)//calling middleware that run while loading
+
+    // *     static site      * //
+app.use(express.static("staticSite"))//calling to use a static site to easily access subsite
+    // *     data parsing      * //
+app.use(express.urlencoded({extended:true}))//allow collection of data from HTML form
+app.use(express.json())//json info parsing
 
 
 
@@ -36,12 +39,13 @@ app.use(logger)//calling middleware that run while loading
 
 //---     middleware inside res/req     ---//
 app.get('/',logger,(req,res) =>{//take request and respond//send data back to user,immediatly after access the site
-    console.log("Here")
+    console.log("Access granted to user")
+    res.render("testSite")
     //res.send("Hi")//send data back to user,after access the site
     })
 
 //---     parsing data     ---//
-
+// for data parsing please consult user.js on router folder //
 
 
 //---     Router/Routing     ---//    
@@ -57,7 +61,7 @@ app.get("/usersList/new",(req,res) =>{//run after accessing site localhost:1359/
 //---     advance Router/Routing     ---//
 //const for router
 const userRouter = require("./Routers/user")
-//calling router for user
+//calling router for user-seek file in folder Routers
 app.use("/user",userRouter)
 
 
