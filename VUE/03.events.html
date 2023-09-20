@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!--pulling vue 3 and vue router into the page-->
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Navbar</span>
+          <li v-for="i in pages" class="navbar-brand"><!-- v-for to initiate for loop -->
+            <!--for i in pages array,make a new list element  and bind ref link to url in pages list -->
+            <a class="navbar-brand" v-bind:href="i.url" :title="`this brings you to ${i.name}`">{{i.name}}</a>
+            <!-- v-bind bind info from pages array to href and title-->
+        </li>
+        </div>
+    </nav>
+    <div @click=style="background-color:blue" style="color: turquoise;display: flex;flex-direction: column;background-color:rgb(44, 42, 42);border-radius: 10px;padding: 2vw;align-items: center;">
+        <h1>{{main}}</h1><br>
+        <h2 >{{sub}}</h2> 
+        <h3 >{{bot}}</h3>    
+
+    </div>
+    <script>
+        <!--vue script-->
+        Vue.createApp({
+            data(){
+                return{//sent data back for pageTitle and content
+                    pages:[
+                    {name:"home",url:"02.loopElement.html"},
+                    {name:"news",url:"02.looplement.html"},
+                    {name:"activity",url:"02.loopElement.html"}],
+                    main:"good evening,welcome to the tutorial",
+                    sub:"please enjoy your stay",
+                    bot:"hover on this zone to change its color"
+                };
+            }
+        }).mount('body');//mount data onto id= content 
+        
+    </script>
+</body>
+</html>
