@@ -1,0 +1,4 @@
+what's the modular?
+
+its a method of making a unique css styling to avoid naming problem that could happen 
+, its good for unique styling but not good for global style assigning like commonly use button
