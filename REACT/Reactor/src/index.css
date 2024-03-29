@@ -96,3 +96,7 @@ button:focus-visible {
 .red{
   color: #ff0033;
 }
+.colorTest{
+  transition: 2.5s ease;
+  
+}

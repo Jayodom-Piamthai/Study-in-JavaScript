@@ -13,6 +13,10 @@ import List from './List.jsx'
 import ListTemplate from './ListTemplate.jsx'
 import PressButton from './PressButton.jsx'
 import Hook from './HookComponent.jsx'
+import Event from './EventComponent.jsx'
+import ColorPicker from './ColorPicker.jsx'
+import Objects from './Objects.jsx'
+import Array from './ArrayAppend.jsx'
 
 
 //for list demonstration
@@ -36,6 +40,10 @@ function App() {
       <ListTemplate  category = "Blank"/>
       <PressButton/>
       <Hook/>
+      <Event/>
+      <ColorPicker/>
+      <Objects/>
+      <Array/>
       <Card/>
       <Card/>
       <Card/>
