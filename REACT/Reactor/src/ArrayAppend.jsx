@@ -6,9 +6,10 @@ function Array(props) {//props allow jsx to pass info from the page it is used i
 
    const [player,setplayer] = useState(['jay','rob','deang']);
 
-   function arrayUpdate(event){
-        newOne = document.getElementById('playerInput').value;
-        setplayer(player => player.append(newOne))
+   function arrayUpdate(){
+        var newOne = document.getElementById('playerInput').value;
+        setplayer(f => [...f,newOne])
+        // player => player.append(newOne)
         document.getElementById('playerInput').value = ''
     }
 
@@ -18,7 +19,8 @@ function Array(props) {//props allow jsx to pass info from the page it is used i
             {player.map((player,index) => <li key={index}>{player}</li>)}
         </ul>
         <input id='playerInput' type='text' value={player.name} ></input>
-        <button onClick={arrayUpdate}></button>
+        <button onClick={arrayUpdate}>update</button>
+
     </>
    )
   }
