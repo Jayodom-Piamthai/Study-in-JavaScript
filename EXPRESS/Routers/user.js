@@ -2,12 +2,12 @@ const express = require('express')
 const router = express.Router() //calling express with router
 
 //this is for routing to /user of the page
-router.get("/",(req,res) =>{//run after accessing site localhost:1359/users
+router.get("/",(req,res) =>{//run after accessing site localhost:1359/user
     console.log("here's the user list")
     console.log(req.query.name)//logging name from adress's query
     res.send("here's the user list")
 })
-router.get("/new",(req,res) =>{//run after accessing site localhost:1359/users/new
+router.get("/new",(req,res) =>{//run after accessing site localhost:1359/user/new
     console.log("whats yer name,newbie")
     res.send("whats yer name,newbie")
 })

@@ -1,4 +1,4 @@
-console.log("commencing test run")
+console.log("commencing test run at port 1359")
 /*
 -start by use npm i express to install express
 -run: npm i nodemon   for automatic rerun/redeploy after saving
@@ -20,7 +20,7 @@ app.set ('view engine','ejs')//set the view engine
 app.use(logger)//calling middleware that run while loading
 
     // *     static site      * //
-app.use(express.static("staticSite"))//calling to use a static site to easily access subsite
+// app.use(express.static("staticSite"))//calling to use a static site to easily access subsite
     // *     data parsing      * //
 app.use(express.urlencoded({extended:true}))//allow collection of data from HTML form
 app.use(express.json())//json info parsing
@@ -40,8 +40,8 @@ app.use(express.json())//json info parsing
 //---     middleware inside res/req     ---//
 app.get('/',logger,(req,res) =>{//take request and respond//send data back to user,immediatly after access the site
     console.log("Access granted to user")
-    res.render("testSite")
-    //res.send("Hi")//send data back to user,after access the site
+    res.render("testSite", {text:"ace"}) //render test site while parsing name as a text to be use in site
+    // res.send("Hi")//send data back to user,after access the site
     })
 
 //---     parsing data     ---//
@@ -49,14 +49,16 @@ app.get('/',logger,(req,res) =>{//take request and respond//send data back to us
 
 
 //---     Router/Routing     ---//    
+////this part is unused cuz we use advance router folder so this part will be totally useless for now,set routing in Routers folder////
 app.get("/usersList",(req,res) =>{//run after accessing site localhost:1359/users
     console.log("here's the user list")
-    res.send("here's the user list")
+    res.send("here's the user list")//change this to res.render to change route to other page,quite handy
 })
 app.get("/usersList/new",(req,res) =>{//run after accessing site localhost:1359/users/new
     console.log("whats yer name,newbie")
     res.send("whats yer name,newbie")
 })
+
 
 //---     advance Router/Routing     ---//
 //const for router
