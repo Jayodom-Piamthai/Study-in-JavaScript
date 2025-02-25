@@ -23,5 +23,7 @@ import { HeaderComponent } from './header/header.component';
 })
 export class AppComponent {
   title = 'test-app';
+  //data binding with signal with typescript to message() in input component for dynamic rendering
+  //will change in page if value changes so better for real time render
   message = input("signal works fine")
 }
