@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-input',
+  selector: 'app-event',
   imports: [],
   template: `
     <p>
-      input present
-      {{message()}}
+      event works!
     </p>
   `,
   styles: ``
 })
-export class InputComponent {
+export class EventComponent {
 
 }

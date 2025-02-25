@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
@@ -25,5 +25,6 @@ export class AppComponent {
   title = 'test-app';
   //data binding with signal with typescript to message() in input component for dynamic rendering
   //will change in page if value changes so better for real time render
-  message = input("signal works fine")
+  message = signal("signal works fine")
+  childInput  = input("sent message from home to child")
 }

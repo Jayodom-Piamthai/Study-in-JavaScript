@@ -1,0 +1,2 @@
+// for angular cli install-globally for the whole machine
+npm install -g @angular/cli 

@@ -1,0 +1,10 @@
+<p>
+    home component works!
+    <!--home have a child component inside that have input name childInput -->
+    <!--we can send in data to the component like this-->
+    <app-child [childInput]="'home sent a good evening to child'"/>
+    <!--or alternatively,with a signal! -->
+    <app-child [childInput]="childSignal()"/>
+    <input type="text" placeholder="try typing!" (keyup)="keyUpOperator($event)"/>
+    <app-counter/>
+  </p>
