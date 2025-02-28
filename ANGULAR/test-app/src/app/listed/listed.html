@@ -1,0 +1,22 @@
+<p>list work yeaaaaaaaa</p>
+<h3>method 1 : inject import</h3>
+<ul>
+    <li>{{listService.listItem}}</li>
+</ul>
+<h3>method 1.2 : inject pull attribute  </h3>
+<ul>
+    <li>{{listService.listItem[0].title}}</li>
+</ul>
+<h3>method 2 : signal listening  </h3>
+<ul>
+    <li>{{listItem()[0].title}}</li>
+</ul>
+<h3>method 2.2 : for loop render  </h3>
+<ul>
+    <!-- track $index track for unique entries in class -->
+    <!-- track index.id track for unique ID in class-->
+    <!-- second method is more specific so it will be faster to render -->
+    @for (index of listItem(); track index.id){
+        <li>{{index.title}}</li>
+    }
+</ul>

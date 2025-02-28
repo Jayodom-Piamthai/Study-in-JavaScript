@@ -1,22 +1,27 @@
 import { Component, input, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+// import components to be use
 import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,HomeComponent,HeaderComponent],
+  //need to specify import here too
+  imports: [RouterOutlet,HeaderComponent],
   template: `
     <app-header/>
-    <app-home/>
     <h1>Welcome to {{title}}!</h1>
-    <h4>AGGGGGGGGGGGG<h4>
-    <router-outlet />
+    <!-- <app-home/> render normally-->
+    <!-- render with router , no need to import more than routerLink-->
+    <router-outlet/>
+    <!-- everything except router-outlet wont be change by router so use it for static stuff like info bar at bottom -->
+    <p>color test</p>
+    <h4>AGGGGGGGGGGGG</h4>
   `,
+  // styles set css inside compo,but wont leak into what was added to index.html
   styles: [
     `
       h4{
-        color:red;
+        color:blue;
       }
     `
   ],

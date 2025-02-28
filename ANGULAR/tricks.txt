@@ -1,2 +1,7 @@
 // for angular cli install-globally for the whole machine
 npm install -g @angular/cli 
+//for generation
+//component
+ng g c <componentName>
+//service
+ng g service <serviceName>

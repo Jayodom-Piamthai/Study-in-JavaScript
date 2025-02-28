@@ -1,11 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { ChildComponent } from '../child/child.component';
-import { EventComponent } from '../event/event.component';
 import { CounterComponent } from '../counter/counter.component';
 
 @Component({
   selector: 'app-home',
-  imports: [ChildComponent , EventComponent , CounterComponent],
+  imports: [ChildComponent  , CounterComponent],
   templateUrl:"./home.html" ,
   styles: ``
 })
@@ -18,17 +17,4 @@ export class HomeComponent {
     // console.log('user typed something!')
   }
 
-  counterValue = signal(0);
-  decrement(){
-    // this.counterValue.set(this.counterValue() - 1)
-    this.counterValue.update((val) => val+1)
-    console.log('plus1')
-  }
-  increment(){
-    // this.counterValue.set(this.counterValue() + 1)
-    this.counterValue.update((val) => val-1)
-  }
-  reset(){
-    this.counterValue.set(0)
-  }
 }

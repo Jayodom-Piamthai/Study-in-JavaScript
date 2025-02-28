@@ -1,0 +1,12 @@
+angular's main code is in app.component.ts which will be injected into index.html at <app-root/>
+component can be made for modular web with many pages by importing it in any page/component
+- component should be put into seperate component folder to avoide confusions,this one didnt so it may be confusing at a time
+component can send signals into its child one layer down(simmilar to how godot sends signals) 
+- these signals contain data that can be accept and use by its child if it have an input function inside it
+- signals sends info everytime data is change,so use it will be use often 
+event listeners can be set inside component.ts and its html elements , along with its function inside export zone in component.ts
+route can be set in app.route.ts for page routing 
+- to allow route with no page reset : import routerLink into root/main/app component then use router-link event listener inside html element
+service is use for encapsulated data and html methods
+- with injectables data can be provide to every component if provideIn:root is present in injectable zone
+- good for dynamic data rendering 

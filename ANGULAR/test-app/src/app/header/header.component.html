@@ -1,4 +1,9 @@
 <header>
-    <nav> header test!</nav>
-    <nav> {{title()}}</nav>
+    <nav> header test!
+        <ul>
+            <!-- router link evoke router in ts component to load as route.ts have set -->
+            <li routerLink="/">{{title()}}</li>
+            <li routerLink="/secondPage">second page</li>
+        </ul>
+    </nav>
 </header>
