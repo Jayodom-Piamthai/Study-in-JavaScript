@@ -1,4 +1,19 @@
 <p>list work yeaaaaaaaa</p>
+<!-- angular directive - if the list is not load(no entry) display loading... -->
+<!-- <p *ngIf="!listItem().length">loading......</p> -->
+<!-- method2 with if function control flow block, no need for ngif in component-->
+@if (!listItem().length){
+    <p>loading.....</p>
+    <h2>
+        please wait a little while to load!
+    </h2>
+}
+<form action="">
+    <label>filter list</label>
+    <input name="searchTerm" [(ngModel)]="searchTerm"  placeholder="search" >
+</form>
+
+
 <h3>method 1 : inject import</h3>
 <ul>
     <li>{{listService.listItem}}</li>
@@ -16,7 +31,15 @@
     <!-- track $index track for unique entries in class -->
     <!-- track index.id track for unique ID in class-->
     <!-- second method is more specific so it will be faster to render -->
-    @for (index of listItem(); track index.id){
-        <li>{{index.title}}</li>
+    <!-- @for (index of listItem(); track index.id){
+        <li appCompleted>{{index.title}}</li>
+    } -->
+    @for (index of listItem() | filterList : searchTerm() ;  track index.id){
+        <li appCompleted [isCompleted]="index.completed">
+               <!-- checkbox of value completed from listItem object -->
+               <!-- checkbox of value completed from listItem object -->
+            <input id="index-{{index.id}}" type="checkbox" [checked]="index.completed " (change)="this.todoClicked()">
+            <label for="index-{{index.id}}">{{index.title}}</label>
+        </li>
     }
 </ul>

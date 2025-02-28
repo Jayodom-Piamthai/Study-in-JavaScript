@@ -1,11 +1,15 @@
-import { Component, inject, OnInit, signal } from '@angular/core';
+import { Component, inject, OnInit, output, signal } from '@angular/core';
 import { ListService } from '../service/list.service';
 import { listing } from '../model/list.type';
 import { catchError } from 'rxjs';
+import { NgIf } from '@angular/common';
+import { CompletedDirective } from '../directives/completed.directive';
+import { FormsModule } from '@angular/forms';
+import { FilterListPipe } from '../pipes/filter-list.pipe';
 
 @Component({
   selector: 'app-listed',
-  imports: [],
+  imports: [ CompletedDirective , FormsModule, FilterListPipe],
   templateUrl:'./listed.html',
   styles: ``
 })
@@ -33,5 +37,11 @@ export class ListedComponent implements OnInit {
       this.listItem.set(listing);
       }
     )
+
+  }
+
+  todoToggle = output<listing>()
+  todoClicked() {
+    // this.todoToggle.emit(this.listItem());
   }
 }
