@@ -37,7 +37,6 @@
     @for (index of listItem() | filterList : searchTerm() ;  track index.id){
         <li appCompleted [isCompleted]="index.completed">
                <!-- checkbox of value completed from listItem object -->
-               <!-- checkbox of value completed from listItem object -->
             <input id="index-{{index.id}}" type="checkbox" [checked]="index.completed " (change)="this.todoClicked()">
             <label for="index-{{index.id}}">{{index.title}}</label>
         </li>
